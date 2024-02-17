@@ -1,0 +1,16 @@
+[tool.poetry]
+name = "pytezos-unknown-seed-issue"
+version = "0.1.0"
+description = ""
+authors = ["ztepler <ztepler@gmail.com>"]
+readme = "README.md"
+
+[tool.poetry.dependencies]
+python = ">=3.10,<3.12"
+pytezos = "^3.11.1"
+pytest = "^8.0.1"
+
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
