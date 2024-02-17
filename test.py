@@ -2,9 +2,7 @@ from pytezos.sandbox.node import SandboxedNodeTestCase
 
 class BaseTestCase(SandboxedNodeTestCase):
     def test_should_allow_to_bake_many_blocks(self) -> None:
-        # alice = self.bootstrap_account()
-        for k in range(100):
+        for block in range(100):
             self.bake_block()
-            print('.', end='')
-        print()
+            print(f'baked block #{block}')
 
